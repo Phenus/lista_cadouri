@@ -7,11 +7,15 @@
 <Style>
     @font-face {
     font-family: "Futura";
-    src: url('assets/fonts/futura/Futura_Extra_Bold.ttf') format('Futura STD ExtraBold'), /* Primary font format */ 
-         url('assets/fonts/futura/Futura_Extra_Bold.ttf') format('Futura ExtraBold');   /* Fallback font format */
-         font-weight:bold; /* Optional: specify weight */
-         font-style:inherit;  /* Optional: specify style */
+    src: url('assets/fonts/futura_extra_bold.woff') format('woff'), /* Primary font format */ 
+         url('assets/fonts/futura_extra_bold.woff2') format('woff2');   /* Fallback font format */
+    font-weight:lighter;
     }
+    @font-face {
+        font-family: "Futura2";
+    src: url('assets/fonts/futura_urw_extra_bold-webfont.woff') format('woff'),
+        url('assets/fonts/futura_urw_extra_bold-webfont.woff2') format('woff2');
+    font-weight:lighter;}
     .body {
         margin: 0; 
         padding: 0; 
@@ -83,11 +87,12 @@
     }
     a {
         font-family: "Futura";
+        font-size: 1.7vw;
         color:#361f0f;
         font-weight: bold;}
     li {
-        font-family: "Futura";
-        font-size:1.25vw;
+        font-family: "Futura2";
+        font-size:1.15vw;
         color:#361f0f;
         font-weight: bold;
     }
